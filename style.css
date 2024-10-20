@@ -13,12 +13,16 @@
     
     --clr-pink: #f39e9e;
     --clr-cyan: #61c4b7;
-    --clr-dark-purple: #552049;
+    --clr-blue: #755cde;
+    --clr-purple: #552049;
+    --clr-orange: #f6a560;
+    --clr-red: #eb7565;
 }
 
 /* -------------- */
 /* Reset          */
 /* -------------- */
+
 /* https://piccalil.li/blog/a-more-modern-css-reset/ */
 
 /* Box sizing rules */
@@ -107,6 +111,12 @@ body {
     margin: 1rem;
 }
 
+@media (min-width: 768px) {
+    body {
+        margin: 2.4375rem;
+    }
+}
+
 p {
     line-height: 26px;
     color: var(--clr-grey);
@@ -124,6 +134,7 @@ p {
 /* -------------- */
 /* Header         */
 /* -------------- */
+
 .header {
     display: flex;
     align-items: center;
@@ -139,6 +150,10 @@ p {
 /* Hero           */
 /* -------------- */
 
+.hero-section {
+    margin-bottom: 100px;
+}
+
 .hero__title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -151,6 +166,96 @@ p {
     margin-bottom: 32px;
 }
 
+/* Bento Grid */
+
+.bento-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'one one'
+    'two three'
+    'four four'
+    'five five'
+    'six six';
+}
+
+.box {
+    border-radius: 8px;
+    /* padding: 1.5rem; */
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    p {
+        color: var(--clr-light);
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+    }
+}
+
+.box-one {
+    background: var(--clr-blue);
+    grid-area: one;
+    min-height: 364px;
+}
+
+.box-two {
+    background: var(--clr-orange);
+    grid-area: two;
+    min-height: 182px;
+}
+
+.box-three {
+    background: var(--clr-pink);
+    grid-area: three;
+    min-height: 182px;
+}
+
+.box-four {
+    background: var(--clr-red);
+    grid-area: four;
+    min-height: 158px;
+}
+
+.box-five {
+    background: var(--clr-cyan);
+    grid-area: five;
+    min-height: 182px;
+}
+
+.box-six {
+    background: var(--clr-purple);
+    grid-area: six;
+    min-height: 182px;
+}
+
+@media(min-width: 768px) {
+    .bento-grid {
+        grid-template-areas:
+        'one one two three'
+        'one one four four'
+        'five five six six';
+    }
+}
+
+@media(min-width: 1080px) {
+    .bento-grid {
+        grid-template-areas:
+        'one one two three four four'
+        'one one five five six six';
+    }
+}
+
+/* End Bento Grid */
 
 /* -------------- */
 /* Utilities      */

@@ -131,6 +131,13 @@ p {
     border-radius: 28px;
 }
 
+@media(min-width: 768px) {
+    .btn {
+        padding: 14px 45px;
+        font-size: 1rem;
+    }
+}
+
 /* -------------- */
 /* Header         */
 /* -------------- */
@@ -140,9 +147,27 @@ p {
     align-items: center;
     justify-content: space-between;
 
+    .home-link__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    @media(min-width: 768px) {
+        .home-link__img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
     .btn {
         background: var(--clr-dark);
         color: var(--clr-light);
+    }
+}
+
+@media(min-width: 768px) {
+    .header {
+        margin-bottom: 64px;
     }
 }
 
@@ -154,6 +179,10 @@ p {
     margin-bottom: 100px;
 }
 
+.title-container {
+    max-width: 752px;
+    margin: 0 auto;
+}
 .hero__title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -164,6 +193,34 @@ p {
 .hero__text {
     padding: 0 30px;
     margin-bottom: 32px;
+}
+
+@media(min-width: 768px) {
+    .hero__title {
+        font-size: 2.75rem;
+        margin-bottom: 27px;
+    }
+
+    .hero__text {
+        font-size: 1.125rem;
+        line-height: 28px;
+        padding: 0 30px;
+        margin-bottom: 64px;
+    }
+}
+
+@media(min-width: 1080px) {
+    .hero__title {
+        font-size: 3.5rem;
+        margin-bottom: 36px;
+    }
+
+    .hero__text {
+        font-size: 1.125rem;
+        line-height: 28px;
+        padding: 0 30px;
+        margin-bottom: 80px;
+    }
 }
 
 /* Bento Grid */

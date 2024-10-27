@@ -127,7 +127,7 @@ p {
     text-decoration: none;
     padding: 8px 28px;
     font-size: 0.875rem;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 28px;
     border-radius: 28px;
 }
@@ -463,6 +463,11 @@ p {
 
 @media(min-width: 768px) {
 
+    .carousel__title {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
     .scroll-container {
         width: 768px;
         margin-bottom: 56px;
@@ -488,6 +493,82 @@ p {
 }
 
 /* Carousel end */
+
+/* -------------- */
+/* Contact        */
+/* -------------- */
+
+.contact__text-container {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: 10px;
+    padding: 49px 24px;
+    margin-bottom: 40px;
+}
+
+.contact__title {
+    font-size: 1.625rem;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.contact__text {
+    color: var(--clr-light);
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.contact__btn {
+    background: var(--clr-red);
+    color: var(--clr-light);
+    display: inline-block;
+}
+
+@media(min-width: 768px) {
+
+    .contact__text-container {
+        padding: 56px 75px 64px;
+    }
+
+    .contact__title {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    
+    .contact__text {
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    
+    .contact__btn {
+        background: var(--clr-red);
+        color: var(--clr-light);
+        display: inline-block;
+    }
+}
+
+@media(min-width: 1080px) {
+    .contact__text-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1080px;
+        padding: 65px 80px;
+        margin: 0 auto 50px auto;
+    }
+
+    .contact__text-container-inner {
+        text-align: left;
+        width: 540px;
+    }
+
+    .contact__title {
+        font-size: 2.5rem;
+        line-height: 51px;
+    }
+}
 
 /* -------------- */
 /* Utilities      */

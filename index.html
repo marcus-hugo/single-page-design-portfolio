@@ -81,17 +81,29 @@
      
     </section>
     <section>
-      <h2>My Work</h2>
-          ->slideshow here...
-          <img width="270" height="180" src="assets/image-slide-3.jpg" alt="">
-          <div>
-            <div>
+      <h2 class="carousel__title">My Work</h2>
+        <div class="carousel">
+  
+          <ul class="scroll-container">
+
+            <li class="carousel__slide"><img src="assets/image-slide-1.jpg" alt=""></li>
+            <li class="carousel__slide"><img src="assets/image-slide-2.jpg" alt=""></li>
+            <li class="carousel__slide"><img src="assets/image-slide-3.jpg" alt=""></li>
+            <li class="carousel__slide"><img src="assets/image-slide-4.jpg" alt=""></li>
+            <li class="carousel__slide"><img src="assets/image-slide-5.jpg" alt=""></li>
+            
+          </ul>
+          <div class="carousel__btns-container">
+
+            <button class="btn-prev">
               <img src="/assets/icon-arrow-left.svg" alt="">
-            </div>
-            <div>
+            </button>
+            <button class="btn-next">
               <img src="/assets/icon-arrow-right.svg" alt="">
-            </div>
+            </button>
+  
           </div>
+        </div>  
     </section>
   
     <section>
@@ -106,5 +118,7 @@
     <img width="48" height="48" src="/assets/logo.svg" alt="">
     <a href="#">Free Consultation</a>
   </footer>
+
+  <script src="scrollSnap.js"></script>
 </body>
 </html>

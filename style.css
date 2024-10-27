@@ -411,6 +411,84 @@ p {
     }
 }
 
+/* Carousel */
+
+.carousel__title {
+    margin-bottom: 32px;
+}
+
+.scroll-container {
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+    gap: 1rem;
+    width: 375px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    scrollbar-width: none;
+}
+
+.carousel__slide {
+    list-style: none;
+    scroll-snap-align: center;
+}
+
+.carousel__slide img {
+    list-style: none;
+    max-width: initial;
+    border-radius: 10px;
+    width: 270px;
+    height: 180px;
+}
+
+.carousel__btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 100px;
+}
+
+.btn-prev, .btn-next {
+    width: 64px;
+    height: 64px;
+    background: var(--clr-dark);
+    border-radius: 50%;
+    border: 0;
+    
+    img {
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .scroll-container {
+        width: 768px;
+        margin-bottom: 56px;
+    }
+
+    .carousel__slide img {
+        width: 540px;
+        height: 360px;
+    }
+}
+
+@media(min-width: 1080px) {
+
+    .scroll-container {
+        width: 1080px;
+        margin-bottom: 56px;
+    }
+
+    .carousel__slide img {
+        width: 540px;
+        height: 360px;
+    }
+}
+
+/* Carousel end */
+
 /* -------------- */
 /* Utilities      */
 /* -------------- */

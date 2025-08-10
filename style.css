@@ -123,6 +123,10 @@ p {
     color: var(--clr-grey);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .btn {
     text-decoration: none;
     padding: 8px 28px;
@@ -157,6 +161,10 @@ p {
 .header__btn {
     background: var(--clr-dark);
     color: var(--clr-light);
+}
+
+.header__btn:hover {
+    background: var(--clr-hover-dark);
 }
 
 @media(min-width: 768px) {
@@ -348,6 +356,10 @@ p {
     margin-bottom: 100px;
 }
 
+.about__btn:hover {
+    background: var(--clr-hover-light);
+}
+
 @media(min-width: 768px) {
     .about-container {
         display: flex;
@@ -467,6 +479,10 @@ p {
     }
 }
 
+.btn-prev:hover, .btn-next:hover {
+    background: var(--clr-hover-dark);
+}
+
 @media(min-width: 768px) {
 
     .carousel__title {
@@ -531,6 +547,10 @@ p {
     display: inline-block;
 }
 
+.contact__btn:hover {
+    background: var(--clr-hover-light);
+}
+
 @media(min-width: 768px) {
 
     .contact__text-container {
@@ -591,6 +611,10 @@ p {
     background: var(--clr-dark);
     color: var(--clr-light);
     display: inline-block;
+}
+
+.footer__btn:hover {
+    background: var(--clr-hover-dark);
 }
 
 @media(min-width: 768px) {
